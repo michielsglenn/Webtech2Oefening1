@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My New CouchApp</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+  </head>
+  <body>
+    
+
+    <h1>My Sushi Restaurant</h1>
+
+    
+    <div id="items">
+	<p>hoeveelheid: <input type="text" value="" id="hoeveelheid"/> </p> 
+	<p>tafelnummer: <select id="tafelnummer">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select></p>
+	<p>opmerkingen:</p>
+<p>	<textarea  id="opmerkingen" rows="4" cols="50">
+
+</textarea> </p>
+	<p>datum en uur: <input type="datetime" id="datum" value="" /> 
+</p>
+
+<button type="button">Plaats bestelling</button onclick="bestel(hoeveelheid.value, tafelnummer.value, opmerkingen.value, datum.value), toon()">
+	</div>
+	
+  </body>
+  <script src="vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    
+  </script>
+  <script src='scripts/main.js'></script>
+</html>
